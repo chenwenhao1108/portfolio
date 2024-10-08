@@ -120,7 +120,7 @@
 							<p class="project-details__desc-para">
 								The OneMore app is a real-world web app used for user to create
 								their very own deck, and user can create their own card and
-								collect it to the deck that they created.
+								collect it to the deck that they created, using compound component and custom hook build reusable component.
 								<img
 									src="./assets/jpeg/onemore.jpg"
 									alt="Project Image"
@@ -129,9 +129,7 @@
 							</p>
 							<p class="project-details__desc-para">
 								And the logic behind the app will calculate when is the time to
-								show up the card again. With the level of proficiency to the
-								card rising, the time gap will be longer until the logic think
-								you are totally get it.
+								show up the card again. The result of the calculation won't be uploaded to the firestore immediately for performance consideration, instead being uploaded after the user finishing this run of learning.
                 <img
 									src="./assets/jpeg/onemore-show-card.jpg"
 									alt="Project Image"
@@ -163,7 +161,7 @@
               <p class="project-details__desc-para"></p>
 								The app is built by React.js and added React Router 6 to create
 								single page routing, using Context API to manage states of the
-								app.
+								app, useMemo and React.memo() to reduce unnecessary re-calculation or re-render to enhance performance.
                 <img
                 src="./assets/jpeg/onemore-user.jpg"
                 alt="Project Image"
